@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vintage Mustangs</title>
+    <!-- Bring in our bootstrap stylesheet -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+      <!-- Define navigation Bar --> 
+      <nav class="navbar navbar-expand-lg navbar-light bg-light color: White">
+        <a class="navbar-brand d-inline p-2 ml-5 bg-info text-white mb-0 pb-0" href="./index.html">Vintage Mustangs</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
+          <ul class="nav navbar-nav ml-auto">  
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" 
+              aria-haspopup="true" aria-expanded="false">
+              Mustang Models
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./1964.html">1964 1/2</a>
+                <a class="dropdown-item" href="./1965.html">1965</a>
+                <a class="dropdown-item" href="./1966.html">1966</a>
+                <a class="dropdown-item" href="./1967.html">1967</a>
+                <a class="dropdown-item" href="./1968.html">1968</a>
+                <a class="dropdown-item" href="./1969.html">1969</a>
+                <a class="dropdown-item" href="./1970.html">1970</a>
+                <a class="dropdown-item" href="./1971.html">1971</a>
+              </div>
+            </li>
+            
+            <li class="nav-item active">
+              <a class="nav-link" href="./production_years.html">Production Years <span class="sr-only">(current)</span></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="./data_table.html">Sales by Year</a>
+            </li>
+          </ul>                      
+        </div>
+      </nav>
+      <!-- Define the container to hold the temperature plot with the description and visualization plots -->
+      <!-- This first section creates the example plot with the description -->   
+      <div class="container">
+        <section class="row">
+          <div class="col-lg-7 col-md-12">
+            <div class="plot-content">
+              <h1 class="plot-header">Vintage Mustangs</h1>
+              <hr>
+              <img src="./Resources/Assets/Images/mustang_logo.jpg" alt="Ford Mustang" id="landing-image">
+
+              <p>
+                Ford Mustang is a series of American automobiles manufactured by Ford. 
+                In continuous production since 1964, the Mustang is currently the longest-produced Ford car nameplate. 
+                Currently in its sixth generation, it is the fifth-best selling Ford car nameplate. 
+                The namesake of the "pony car" automobile segment, the Mustang was developed as a highly styled line of 
+                sporty coupes and convertibles derived from existing model lines, initially distinguished by "long hood, short deck" proportions. 
+                Originally predicted to sell 100,000 vehicles yearly, the 1965 Mustang became the most successful vehicle launch since the 1927 Model A. 
+                Introduced on April 17, 1964 (16 days after the Plymouth Barracuda), over 400,000 units in its first year; the one-millionth Mustang 
+                was sold within two years of its launch. In August 2018, Ford produced the 10-millionth Mustang; matching the first 1965 Mustang, 
+                the vehicle was a 2019 Wimbledon White convertible with a V8 engine. The success of the Mustang launch would lead to multiple competitors
+                from other American manufacturers, including the Chevrolet Camaro and Pontiac Firebird (1967), AMC Javelin (1968), and Dodge Challenger (1970).
+                The Mustang would also have an effect on designs of coupés worldwide, leading to the marketing of the Toyota Celica and Ford Capri in the 
+                United States (the latter, by Lincoln-Mercury). The Mercury Cougar was launched in 1967 as a higher-trim version of the Mustang; during the 1970s, 
+                it was repackaged as a personal luxury car. 
+                <br>
+                <br>
+                From Wikipedia, the free encyclopedia.           
+              </p>
+            </div>
+          </div>
+        
+          <!-- This section creates visualization plots on the right --> 
+          <div class="col-lg-5 col-md-12">
+            <div class="visplot-content">
+              <h2 class="plot-header">Production Years</h2>
+              <hr>
+              <div class="container">
+
+                <div class="row">
+
+                  <div class="col-lg-6 col-md-3">
+                    <a href="./1964.html">
+                    <img src="./Resources/Assets/Images/1964_ford_mustang.jpg"  alt="1964 Ford Mustang" id="vis-image">
+                    </a>
+                  </div>
+              
+                  <div class="col-lg-6 col-md-3">
+                    <a href="./1965.html">
+                    <img src="./Resources/Assets/Images/1965_ford_mustang.jpg" alt="1965 Ford Mustang" id="vis-image">
+                    </a>
+                  </div>
+              
+                  <div class="col-lg-6 col-md-3">
+                    <a href="./1966.html">
+                    <img src="./Resources/Assets/Images/1966_ford_mustang.jpg" alt="1966 Ford Mustang" id="vis-image">
+                    </a>
+                  </div>
+
+                  <div class="col-lg-6 col-md-3">
+                    <a href="./1967.html">
+                    <img src="./Resources/Assets/Images/1967_ford_mustang_fastback.jpg" alt="1967 Ford Mustang" id="vis-image">
+                    </a>
+                  </div>
+
+                  <div class="col-lg-6 col-md-3">
+                    <a href="./1968.html">
+                    <img src="./Resources/Assets/Images/1968_ford_mustang_fastback.jpg" alt="1968 Ford Mustang" id="vis-image">
+                    </a>
+                  </div>              
+
+                  <div class="col-lg-6 col-md-3">
+                    <a href="./1969.html">
+                    <img src="./Resources/Assets/Images/1969_ford_mustang_fastback.jpg" alt="1969 Ford Mustang" id="vis-image">
+                    </a>
+                  </div>
+
+                  <div class="col-lg-6 col-md-3">
+                    <a href="./1970.html">
+                    <img src="./Resources/Assets/Images/1970_ford_mustang_boss_302.jpg" alt="1970 Ford Mustang Boss 302" id="vis-image">
+                    </a>
+                  </div>
+                  
+                  <div class="col-lg-6 col-md-3">
+                    <a href="./1971.html">
+                    <img src="./Resources/Assets/Images/1971_ford_mustang_mach1.jpg" alt="1970 Ford Mustang Mach 1" id="vis-image">
+                    </a>
+                  </div>
+                </div>  
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>  
+      <footer>
+        <p>
+          WEB Visualization BONUS
+          <br>
+          © Copyright Coding Bootcamp 2020. All rights reserved.
+        </p>
+      </footer>
+  </body>      
+</html>
+<!-- EOF -->
